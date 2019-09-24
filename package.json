@@ -1,0 +1,24 @@
+{
+  "name": "babel-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
+    "build": "node_modules/.bin/webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.2.1"
+  }
+}
